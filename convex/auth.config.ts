@@ -1,7 +1,7 @@
 export default {
   providers: [
     {
-      domain: `${process.env.ISSUER_URL}`,
+      domain:"https://worthy-hagfish-74.clerk.accounts.dev",
       applicationID: "convex",
     },
   ],

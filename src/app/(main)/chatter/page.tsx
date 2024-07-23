@@ -1,4 +1,10 @@
+import { Navbar } from "@/components/chatter/navbar";
+
 const ChatterPage = () => {
-  return <div>ChatterPage</div>;
+  return (
+    <div className="flex flex-col justify-start">
+      <Navbar />
+    </div>
+  );
 };
 export default ChatterPage;

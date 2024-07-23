@@ -8,13 +8,14 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, isLoading } = useConvexAuth();
 
   if (isLoading) {
-    <div className="w-full h-full flex items-center justify-center">
-      return <Loader size="md" />
-    </div>;
+    return (
+      <div className="w-full h-full flex items-center justify-center">
+        <Loader size="md" />
+      </div>
+    );
   }
-
-  if(!isAuthenticated){
-    redirect("/")
+  if (!isAuthenticated) {
+    redirect("/");
   }
 
   return <div>{children}</div>;

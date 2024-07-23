@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import "./globals.css";
@@ -40,6 +41,7 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
+            storageKey="chat app"
           >
             {children}
           </ThemeProvider>
